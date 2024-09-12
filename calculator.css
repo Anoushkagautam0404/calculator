@@ -1,0 +1,99 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #d7f0ed, #b7b7c7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 370px; /* Adjust width for better fitting */
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Header styling */
+.text-center {
+    background: #4a4a4a;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Input styling */
+.input {
+    width: 100%;
+    padding: 50px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.5em;
+    text-align: right;
+    color: #333;
+    background: #dce4ec;
+}
+
+/* Button row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+/* Button styling */
+.button {
+    flex: 1;
+    padding: 30px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    box-sizing: border-box;
+}
+
+/* Button hover effects */
+.button:hover {
+    background: #0056b3;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Specific button styling */
+.button.operator {
+    background: #ff5722;
+}
+
+.button.operator:hover {
+    background: #e64a19;
+}
+
+.button.double {
+    flex: 2;
+}
+
+/* Responsive design */
+@media (max-width: 360px) {
+    .button {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
